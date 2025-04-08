@@ -1,33 +1,33 @@
-package com.ferreusveritas.dynamictrees.compat;
+// package com.ferreusveritas.dynamictrees.compat;
 
-import com.ferreusveritas.dynamictrees.api.backport.GameRegistry;
-import com.ferreusveritas.dynamictrees.blocks.BlockDendroCoil;
+// import com.ferreusveritas.dynamictrees.api.backport.GameRegistry;
+// import com.ferreusveritas.dynamictrees.blocks.BlockDendroCoil;
 
-public class CCProxyActive extends CCProxyBase {
+// public class CCProxyActive extends CCProxyBase {
 
-	BlockDendroCoil blockDendroCoil;
+// 	BlockDendroCoil blockDendroCoil;
 	
-	public CCProxyActive() {}
+// 	public CCProxyActive() {}
 	
-	@Override
-	public void createBlocks() {
-		blockDendroCoil = new BlockDendroCoil();
-	}
+// 	@Override
+// 	public void createBlocks() {
+// 		blockDendroCoil = new BlockDendroCoil();
+// 	}
 	
-	@Override
-	public void createItems() {}
+// 	@Override
+// 	public void createItems() {}
 	
-	@Override
-	public void registerBlocks() {
-		GameRegistry.register(blockDendroCoil);
-	}
+// 	@Override
+// 	public void registerBlocks() {
+// 		GameRegistry.register(blockDendroCoil);
+// 	}
 	
-	@Override
-	public void registerItems() {
-		//We don't need to register ItemBlocks in 1.7.10
-	}
+// 	@Override
+// 	public void registerItems() {
+// 		//We don't need to register ItemBlocks in 1.7.10
+// 	}
 	
-	@Override
-	public void registerRecipes() {}
+// 	@Override
+// 	public void registerRecipes() {}
 
-}
+// }

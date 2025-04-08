@@ -6,7 +6,7 @@ public class CommonProxyCompat {
 	
 	public void preInit() {
 		//Computercraft Creative Mode Stuff
-		ccproxy = CCProxyBase.hasComputerCraft() ? new CCProxyActive() : new CCProxyBase();
+		ccproxy = new CCProxyBase();
 		ccproxy.createBlocks();
 	}
 

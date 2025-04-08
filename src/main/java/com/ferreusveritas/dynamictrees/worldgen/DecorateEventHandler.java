@@ -10,17 +10,6 @@ import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 import net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType;
 
 /**
-* <pre><tt>
-* [   01   ] [   02   ] [   03   ] [   04   ]
-* ┌──┬──┬──┐ ┌──┬──┬──┐ ┌──┬──┬──┐ ┌──┬──┬──┐
-* │  │  │  │ │  │  │  │ │  │Un│Ex│ │Un│Ex│  │
-* ├──┼──┼──┤ ├──┼──┼──┤ ├──┼──┼──┤ ├──┼──┼──┤
-* │  │Un│Ex│ │Un│  │  │ │  │  │Ex│ │Ex│Un│  │
-* ├──┼──┼──┤ ├──┼──┼──┤ ├──┼──┼──┤ ├──┼──┼──┤
-* │  │Ex│Ex│ │Ex│Ex│  │ │  │  │  │ │  │  │  │
-* └──┴──┴──┘ └──┴──┴──┘ └──┴──┴──┘ └──┴──┴──┘
-* </tt></pre>
-*
 * Ex: Chunk that will be tested for existence
 * Un: Undecorated chunk that will be decorated if the other chunks exist.
 * 

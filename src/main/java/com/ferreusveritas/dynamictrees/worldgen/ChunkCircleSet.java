@@ -16,32 +16,6 @@ import com.ferreusveritas.dynamictrees.util.Circle;
 * <li>There are 16 circle positions per chunk but it's impossible to use them all because of crowding.</li>
 * </ul>
 * </p>
-* <p><pre><tt>
-* <b>◀───Chunk───▶</b>
-* ┌──┬──┬──┬──┐
-* │00│01│02│03│
-* ├──┼──┼──┼──┤
-* │04│05│06│07│
-* ├──┼──┼──┼──┤
-* │08│09│10│11│
-* ├──┼──┼──┼──┤
-* │12│13│14│15│
-* └──┴──┴──┴──┘</tt></pre>
-* </p>
-* <p><pre><tt>
-* Each of the 16 tiles are encoded as a single byte.  Bits are encoded thusly:
-* ┌──┬──┬──┬──┬──┬──┬──┬──┐
-* │07│06│05│04│03│02│01│00│
-* ├──┼──┴──┴──┼──┴──┼──┴──┤<b>
-* │Ex│ Radius │  X  │  Z  │</b>
-* └──┴────────┴─────┴─────┘</tt></pre>
-* <ul>
-* <li><b>X:</b> The X offset of the circle center within the tile. (0-3)</li>
-* <li><b>Z:</b> The Z offset of the circle center within the tile. (0-3)</li>
-* <li><b>Radius:</b> The radius of the circle - 1. (0-7) Zero means no circle, any other value will have 1 added to it before use.</li>
-* <li><b>Ex:</b>Extended bit.</li>
-* </ul>
-* </p>
 *
 * @author ferreusveritas
 *
